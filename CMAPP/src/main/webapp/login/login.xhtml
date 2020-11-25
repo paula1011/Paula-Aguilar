@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml">
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:p="http://primefaces.org/ui">
+template="/WEB-INF/templates/logintemplate.xhtml">
+
+
+<ui:define name="bodyapp">
+		<h:form>
+			<p ;messages id="menssages" globalOnly="true" autoUpdate="true"
+				closable="true">
+				</p:messages
+                            showDetail="true" showSummary="true"/>
+				<BR /> <BR /> <BR /> <BR />
+
+
+				<p:panel id="principal" header="#{msg.appLogin}"
+					style="width:500px;">
+					<p:panelGrid columns="2" style="width:100%">
+						<h:panelGroup>
+							<p:outputLabel value="#{msg.userLoging}" for="loginsu" />
+							<p:inputText id="loginsu" value="#{login.user}" required="true"
+								requiredMessage="#{msg.errorCampos}" />
+							<p:message for="loginsu" />
+						</h:panelGroup>
+						<h:panelGroup>
+							<p:outputLabel value="#{msg.password}" style="width:100%"
+								for="pass" />
+							<p:inputText id="pass" value="#{login.password}" required="true"
+								requiredMessage="#{msg.errorCampos}" />
+							<p:message for="loginsu" />
+						</h:panelGroup>
+
+					</p:panelGrid>
+					<f:facet name="footer">
+						<div align="center">
+							<p:commandButton value="#{msg.btnAcces}"
+								action="#{login.accessCheck}" />
+						</div>
+					</f:facet>
+				</p:panel>
+		</h:form>
+	</ui:define>
+	<u:composition />

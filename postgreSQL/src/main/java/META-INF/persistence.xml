@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="postgreSQL">
+		<class>com.postgreSQL.model.Ciudade</class>
+		<class>com.postgreSQL.model.Decreto</class>
+		<class>com.postgreSQL.model.Departamento</class>
+		<class>com.postgreSQL.model.Empresa</class>
+		<class>com.postgreSQL.model.EmpresasLogin</class>
+		<class>com.postgreSQL.model.Enfermedade</class>
+		<class>com.postgreSQL.model.HistoricosDecreto</class>
+		<class>com.postgreSQL.model.Login</class>
+		<class>com.postgreSQL.model.Persona</class>
+		<class>com.postgreSQL.model.Registro</class>
+		<class>com.postgreSQL.model.TiposDocumento</class>
+	</persistence-unit>
+</persistence>
